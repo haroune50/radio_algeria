@@ -1,0 +1,2 @@
+set(__QT_DEPLOY_TARGET_Radio_Algeria_FILE /home/hod-11/Documents/Radio_Algeria/build/Desktop_Qt_6_10_1-Debug/Radio_Algeria)
+set(__QT_DEPLOY_TARGET_Radio_Algeria_TYPE EXECUTABLE)

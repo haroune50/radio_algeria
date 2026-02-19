@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-e9c60d9d064ba0e6753c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Radio_Algeria",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Radio_Algeria::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Radio_Algeria-Debug-a07442898f78771e5902.json",
+					"name" : "Radio_Algeria",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Radio_Algeria_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Radio_Algeria_autogen-Debug-57ca1663572da2de905f.json",
+					"name" : "Radio_Algeria_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Radio_Algeria_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Radio_Algeria_autogen_timestamp_deps-Debug-30fdff57e1dc5016d3d3.json",
+					"name" : "Radio_Algeria_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/hod-11/Documents/Radio_Algeria/build/Desktop_Qt_6_10_1-Debug",
+		"source" : "/home/hod-11/Documents/Radio_Algeria"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

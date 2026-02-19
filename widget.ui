@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Widget</class>
+ <widget class="QWidget" name="Widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Radio Player</string>
+  </property>
+  <property name="layoutDirection">
+   <enum>Qt::LayoutDirection::LeftToRight</enum>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(246, 245, 244);</string>
+  </property>
+  <widget class="QPushButton" name="b_play">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>70</y>
+     <width>84</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+background-color: rgb(87, 227, 137);</string>
+   </property>
+   <property name="text">
+    <string>Play</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="b_stop">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>70</y>
+     <width>84</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(165, 29, 45);</string>
+   </property>
+   <property name="text">
+    <string>Stop</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="b_restart">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>70</y>
+     <width>84</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(26, 95, 180);</string>
+   </property>
+   <property name="text">
+    <string>Restart</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="b_previous">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>120</y>
+     <width>84</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(205, 171, 143);</string>
+   </property>
+   <property name="text">
+    <string>Previous</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="b_next">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>120</y>
+     <width>84</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+background-color: rgb(249, 240, 107);</string>
+   </property>
+   <property name="text">
+    <string>Next</string>
+   </property>
+  </widget>
+  <widget class="QSlider" name="horizontalSlider">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>180</y>
+     <width>261</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Orientation::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="l_volume">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>180</y>
+     <width>61</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Volume</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>20</y>
+     <width>281</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>Adrar</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Chlef</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Laghouat</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Oumbouaghi</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Batna</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Bejaia</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Biskra</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Bechar</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Blida</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Bouira</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Tamanrasset</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Tebessa</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Tlemcen</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Tiaret</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Tiziouzou</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Elbahdja</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Djelfa</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Jijel</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Setif</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Saida</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Skikda</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Sidibelabes</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Annaba</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Guelma</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Constantine</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Medea</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Mostaganem</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Msila</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Mascara</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Ouargla</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Oran</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>radioelbayedh</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Illizi</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>bordjboubrreridj</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Boumerdes</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Taref</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Tindouf</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Tissemssilt</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Ouedsouf</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Khenchla</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>SoukAhras</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Tipaza</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Mila</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Aindefla</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Naama</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>AinTimouchent</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Ghardaia</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Relizan</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Culture</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Chaine1</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Chaine2</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Chaine3</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Internationale</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Coran</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Jeunesse</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="l_station">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>20</y>
+     <width>41</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Station</string>
+   </property>
+  </widget>
+  <widget class="QTreeView" name="treeView">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>300</y>
+     <width>371</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+background-color: rgb(255, 255, 255);</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="l_logmessages">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>270</y>
+     <width>101</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Log/Messages :</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
