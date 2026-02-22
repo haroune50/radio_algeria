@@ -1,4 +1,4 @@
-name: Build Radio App
+name: Build Radio Algeria
 
 on:
   push:
@@ -16,18 +16,15 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Install dependencies
+      - name: Install Qt and dependencies
         run: |
           sudo apt update
-          sudo apt install -y qt6-base-dev qt6-base-dev-tools cmake mpv
+          sudo apt install -y qt6-base-dev qt6-base-dev-tools cmake ninja-build
 
-      - name: Configure project
+      - name: Configure
         run: |
-          mkdir build
-          cd build
-          cmake ..
+          cmake -S . -B build -G Ninja
 
-      - name: Build project
+      - name: Build
         run: |
-          cd build
-          make
+          cmake --build build
