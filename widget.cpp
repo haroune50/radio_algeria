@@ -23,26 +23,25 @@ Widget::~Widget()
 void Widget::on_b_play_clicked()
 {
 #if defined(__linux__)
-    // إذا كان يوجد تشغيل سابق → أوقفه أولاً
+    //ً
     if (childPid > 0) {
         kill(childPid, SIGTERM);
         waitpid(childPid, nullptr, 0);
         childPid = 0;
     }
 
-    // تعريف المتغير أولاً
+    // 
     QString wilaya = ui->comboBox->currentText().toLower();
 
 
-    // ضع اسم القناة الحالية
-
-    // إعداد رابط البث
+    
+    //
     QString fullUrl =
         "https://radio" + wilaya +
         ".ice.infomaniak.ch/" +
         wilaya + ".mp3";
 
-    // تشغيل mpv
+    //mpv
     childPid = fork();
     if (childPid == 0) {
         execlp("mpv",
@@ -62,8 +61,8 @@ void Widget::on_b_stop_clicked()
 {
 
     if (childPid > 0) {
-        kill(childPid, SIGTERM);      // طلب إنهاء طبيعي
-        waitpid(childPid, nullptr, 0); // انتظار انتهاء العملية
+        kill(childPid, SIGTERM);     
+        waitpid(childPid, nullptr, 0); 
         childPid = 0;
     }
 }

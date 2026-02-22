@@ -1,0 +1,33 @@
+name: Build Radio App
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: |
+          sudo apt update
+          sudo apt install -y qt6-base-dev qt6-base-dev-tools cmake mpv
+
+      - name: Configure project
+        run: |
+          mkdir build
+          cd build
+          cmake ..
+
+      - name: Build project
+        run: |
+          cd build
+          make
